@@ -1,0 +1,45 @@
+mixin contact()
+
+    +b('section').contact
+        .container
+            +e('h4').title Как с нами связаться
+            +e.line
+            +e.wrap
+                +e.block
+                    +e.wrap-address
+                        +e.block
+                            +e('p').info Мы находимся:
+                            +e('p').text г. Пермь, шоссе Космонавтов, д. 61б, офис 106/1
+                        +e.block
+                            +e('p').info Звоните по телефону:
+                            +e('p').text +7 (342) 255-10-89
+                        +e.block
+                            +e('p').info Наша почта:
+                            +e('p').text dogma59@bk.ru
+                    +e.map
+                    +e.block
+                        +e('p').info Наши реквизиты:
+                        +e.wrap-requisite
+                            +e('p').text-info Общество с ограниченной ответственностью «ХХХХ»
+                            +e('p').text-info ИНН: ХХХХХХХХХХ
+                        +e.wrap-requisite
+                            +e('p').text-info 000000, г. Название города, ул. Название улицы, д. Номер дома
+                            +e('p').text-info ОГРН: ХХХХХХХХХХ
+                +e.feedback
+                    +e('p').subtitle Остались вопросы?
+                    +e('p').message Оставьте заявку и наш специалист свяжется<br>с Вами для консультации по любым<br>вопросам
+                    +e('input')(type="text", placeholder="Как к Вам обращаться").input-name
+                    +e('input')(type="number", placeholder="Контактный телефон").input-number
+                    +e('button').submit Оставить заявку
+                    +e.wrap-checkbox
+                        +e('input').checkbox 
+                        +e('p').text-checkbox Нажимая на кнопку «Оставить заявку»,<br>Вы соглашаетесь с <span>Политикой конфиденциальности</span>
+                    +e('p').message-info Или напишите нам в мессенджеры
+                    +e.wrap-sharing
+                        +e('a').icon
+                            img(src='/images/icon__vk.svg')
+                        +e('a').icon
+                            img(src='/images/icon__yt.svg')
+                        +e('a').icon
+                            img(src='/images/icon__wu.svg')
+

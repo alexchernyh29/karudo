@@ -1,0 +1,194 @@
+mixin questions()
+
+    +b('section').questions
+        .container
+            +e('h4').title Вопросы и ответы
+            +e.line
+            +e.wrap 
+                +e.wrap-item
+                    +e.icon
+                        img(src='/images/question.png')
+                    +e.subtitle Могу я списать долги, если у меня есть имущество?
+                    +e.plus
+                        img(src='/images/plus.png')
+                +e.wrap-item
+                    +e.icon
+                        img(src='/images/question.png')
+                    +e.subtitle После процедуры банкротства мне больше не дадут<br>кредитов?
+                    +e.plus
+                        img(src='/images/plus.png')
+                +e.wrap-item
+                    +e.icon
+                        img(src='/images/question.png')
+                    +e.subtitle У меня есть зарплата, мне нельзя проходить процедуру?
+                    +e.plus
+                        img(src='/images/plus.png')
+                +e.wrap-item
+                    +e.icon
+                        img(src='/images/question.png')
+                    +e.subtitle А вдруг мне не спишут долги и все это обман?
+                    +e.plus
+                        img(src='/images/plus.png')
+                +e.wrap-item
+                    +e.icon
+                        img(src='/images/question.png')
+                    +e.subtitle У меня нет денег платить, я и так плачу кучу кредитов,<br>как мне быть?
+                    +e.plus
+                        img(src='/images/plus.png')
+                +e.wrap-item
+                    +e.icon
+                        img(src='/images/question.png')
+                    +e.subtitle Если я перестану платить, мне начнут звонить банки?
+                    +e.plus
+                        img(src='/images/plus.png')
+                +e.wrap-item
+                    +e.icon
+                        img(src='/images/question.png')
+                    +e.subtitle Можно ли списать долги  до 500 000 рублей?
+                    +e.plus
+                        img(src='/images/plus.png')
+            +e('button').submit Задать свой вопрос
+            //- <div class="options-group">
+            //-         <div class="group__header">
+            //-             <div class ="group__icon">
+            //-                 <img src="/upload/iblock/124/u896ee57tn5x7dee0qj5culwxpz7q6fk.png" alt=""/>
+            //-             </div>
+            //-             <span class="group__title" href=""><span>Фундамент</span></span>
+            //-             <div class="group__arrow"></div>
+            //-         </div>
+            //-         <div>
+            //-             <ul class="list__options">
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="9" name="9" value="9">
+            //-                         <label for="9">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="10" name="10" value="10">
+            //-                         <label for="10">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="11" name="11" value="11">
+            //-                         <label for="11">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="12" name="12" value="12">
+            //-                         <label for="12">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="13" name="13" value="13">
+            //-                         <label for="13">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-             </ul>
+            //-         </div>
+            //-     </div>
+            //-     <div class="options__group">
+            //-         <div class="group__header-floor">
+            //-             <div class ="group__icon">
+            //-                 <img src="/upload/iblock/0f7/0zzl08txtp2480d18x6pd07516yke4oy.png" alt=""/>
+            //-             </div>
+            //-             <span class="group__title"><span>Полы</span></span>
+            //-             <div class="group__arrow-3"></div>
+            //-         </div>
+            //-         <div>
+            //-             <ul class="list__options-floor">
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="14" name="14" value="14">
+            //-                         <label for="14">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="15" name="15" value="15">
+            //-                         <label for="15">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="16" name="16" value="16">
+            //-                         <label for="16">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="17" name="17" value="17">
+            //-                         <label for="17">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="18" name="18" value="18">
+            //-                         <label for="18">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-             </ul>
+            //-         </div>
+            //-     </div>
+            //-     <div class="options__group">
+            //-         <div class="group__header-plan">
+            //-             <div class ="group__icon">
+            //-                 <img src="/upload/iblock/15f/ywrbfeiriie4orb9neygvlaxn6y1w7z4.png" alt=""/>
+            //-             </div>
+            //-             <label class="group__title" href=""><span>Перепланировка</label>
+            //-             <div class="group__arrow-2"></div>
+            //-         </div>
+            //-         <div>
+            //-             <ul class="list__options-plan">
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="19" name="19" value="19">
+            //-                         <label for="19">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="20" name="20" value="20">
+            //-                         <label for="20">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="21" name="21" value="21">
+            //-                         <label for="21">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="22" name="22" value="22">
+            //-                         <label for="22">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-                 <li class="options-item_table">
+            //-                     <div class="checkbox">
+            //-                         <input class="custom-checkbox" type="checkbox" id="23" name="23" value="23">
+            //-                         <label for="23">Наименование опции</label>
+            //-                     </div>
+            //-                     <span class="item-price">Цена опции</span>
+            //-                 </li>
+            //-             </ul>
+            //-         </div>
+            //-     </div>

@@ -1,0 +1,50 @@
+.footer
+    background-color $c-black
+    padding w(30) 0
+
+    &__wrap
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__block
+        padding-top w(13)
+        &:last-child
+            padding-top w(25)
+
+    &__logo
+        width w(265)
+        img
+            width 100%
+
+    &__submit
+        padding w(12) w(35)
+        background linear-gradient(97.83deg, #F9ED32 -2.86%, #FBB040 84.88%)
+        border-radius w(53)
+        border none
+
+    &__info
+        padding w(15) 0 w(2)
+        font-family $ff-Arsenal
+        font-style normal
+        font-weight 400
+        font-size w(14)
+        line-height w(18)
+        color $c-white
+        width w(185)
+        border-bottom w(1) solid $c-white
+        margin 0 auto
+
+    &__text
+        font-family $ff-Arsenal
+        font-style normal
+        font-weight 400
+        font-size w(14)
+        line-height w(18)
+        color $c-white
+        text-align end
+        &:last-child
+            padding w(15) 0 w(2)
+
+        span
+            border-bottom w(1) solid $c-white

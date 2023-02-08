@@ -1,0 +1,23 @@
+mixin header-top()
+
+    +b('section').header-top
+        .container
+            +e.wrap 
+                +e.logo 
+                    img(src='/images/logo.png')
+                +e.block 
+                    +e('p').text Мы в соц. сетях:
+                    +e.wrap__icon 
+                        +e('a').icon
+                            img(src='/images/icon__vk.svg')
+                        +e('a').icon
+                            img(src='/images/icon__yt.svg')
+                        +e('a').icon
+                            img(src='/images/icon__wu.svg')
+                +e.block 
+                    +e('p').text Электронная почта:
+                    +e('p').info dogma59@bk.ru
+                +e.block 
+                    +e('p').text Контактный телефон:
+                    +e('p').info +7 (342) 255-10-89
+                +e('button').submit Оставить заявку

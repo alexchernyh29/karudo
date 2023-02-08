@@ -1,0 +1,13 @@
+mixin footer()
+
+    +b('section').footer
+        .container
+            +e.wrap
+                +e.logo
+                    img(src='/images/logo__white.png')
+                +e.block
+                    +e('button').submit Оставить заявку
+                    +e('p').info Политика конфиденциальности
+                +e.block
+                    +e('p').text ©2021 Избавим от долгового рабства.
+                    +e('p').text Разработка сайта - <span>EDISON STUDIO</span>

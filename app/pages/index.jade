@@ -1,0 +1,22 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header-top/header-top
+include /blocks/header-bottom/header-bottom
+include /blocks/help/help
+include /blocks/info/info
+include /blocks/about-us/about-us
+include /blocks/questions/questions
+include /blocks/contact/contact
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	+header-top()
+	+header-bottom()
+	+info()
+	+help()
+	+about-us()
+	+questions()
+	+contact()
+	+footer()
