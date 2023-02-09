@@ -1,0 +1,19 @@
+mixin promo-banner()
+
+    +b('section').promo-banner
+        .container
+            +e.form
+                +e.block
+                    +e.questions
+                        +e('p').item Сложно платить по кредитам?
+                        +e('p').item Устали от коллекторов?
+                        +e('p').item Просрочки уже давно?
+                    +e.title Законно избавим<br><span>от долгового рабства</span>
+                    +e('p').sup-title Вы можете прямо сейчас узнать подходите ли Вы под федеральную программу списания долгов. Оставьте заявку и мы поможем найти выход из ситуации.
+                +e.feedback
+                    +e('input')(type="text", placeholder="Как к Вам обращаться").input-name
+                    +e('input')(type="number", placeholder="Контактный телефон").input-number
+                    +e('button').submit Оставить заявку
+                +e.wrap-checkbox
+                    +e('input').checkbox
+                    +e('p').text-checkbox Нажимая на кнопку «Оставить заявку»,Вы соглашаетесь с <span>Политикой конфиденциальности</span>

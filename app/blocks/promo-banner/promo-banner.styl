@@ -1,0 +1,119 @@
+.promo-banner
+    background url('/images/fon-promo-banner.jpg') no-repeat center
+    width 100%
+    height 500px
+
+    &__form
+        width w(1134)
+        
+    &__questions
+        position relative
+        padding-top w(45)
+        display flex
+
+    &__item
+        position relative
+        margin-left w(65.5)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(18)
+        line-height w(23)
+        z-index 2
+        &:first-child
+            padding-left 0
+        
+        &::before
+            content ''
+            position absolute
+            left w(-10)
+            top w(-10)
+            width w(25)
+            height w(25)
+            background $c-yellow
+            border-radius w(20)
+            z-index -1
+
+    &__title
+        width w(717)
+        padding-left w(70)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(74)
+        line-height w(62)
+        text-align right
+        text-transform uppercase
+        padding-top w(42)
+        span
+            font-size w(50)
+            line-height w(62)
+
+    &__feedback
+        display flex
+        padding-top w(20)
+
+    &__input-name
+        font-family $ff-Arsenal
+        padding-left w(20)
+        width w(271)
+        height w(42)
+        background $c-white
+        border w(1) solid $c-grey
+        border-radius w(53)
+
+    &__input-number
+        font-family $ff-Arsenal
+        margin-left w(20)
+        padding-left w(20)
+        width w(271)
+        height w(42)
+        background $c-white
+        border w(1) solid $c-grey
+        border-radius w(53)
+
+    &__sup-title
+        font-family $ff-Arsenal
+        width w(650)
+        padding-top w(56)
+        font-weight 400
+        font-size w(16)
+        line-height w(20)
+
+    &__submit
+        font-family $ff-Arsenal
+        width w(155)
+        height w(42)
+        background linear-gradient(97.83deg, #F9ED32 -2.86%, #FBB040 84.88%)
+        border-radius w(53)
+        font-family $ff-Arsenal
+        font-style normal
+        font-weight 400
+        font-size w(10)
+        line-height w(18)
+        color $c-black
+        border none
+        margin-left w(35)
+
+    &__text-checkbox
+        padding-left w(5)
+        font-family $ff-Arsenal
+        font-weight 400
+        font-size w(10)
+        line-height w(13)
+        color $c-black
+        span
+            padding-bottom w(2)
+            font-family $ff-Arsenal
+            font-weight 700
+            border-bottom w(1px) solid $c-black
+            color $c-black
+
+    &__wrap-checkbox
+        display flex
+        flex-direction row
+        padding w(12) 0 w(59) w(0)
+
+    &__checkbox
+        width w(15)
+        height w(15)
+        border w(1) solid $c-grey
+        border-radius w(2)

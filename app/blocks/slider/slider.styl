@@ -1,0 +1,90 @@
+.slider
+    padding-top w(120)
+
+    &__title
+        padding-bottom w(15)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(48)
+        line-height w(60)
+        color $c-black
+        text-align center
+        text-transform uppercase
+        border-bottom w(4) solid $c-yellow
+
+    &__line
+        width w(163)
+        height w(4)
+        background $c-yellow
+        margin 0 auto
+
+    &__swiper
+        margin-top w(60)
+
+    &__wrap-slider
+        margin w(35) w(30)
+        position relative
+        padding w(50) w(30) w(76)
+        background-image url('/images/bg-slider.png')
+        background-size 100%
+        width w(330)
+        height w(370)
+        
+    &__slider-title
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(18)
+        line-height w(23)
+        color $c-black
+        text-align center
+        
+    &__slider-image
+            content ''
+            position absolute
+            width w(75)
+            height w(75)
+            top w(-30)
+            left w(125)
+            background-size 100%
+
+    &__slider-text
+        padding-top w(20)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(14)
+        line-height w(18)
+        color $c-black
+
+    &__slider-link
+        width w(115)
+        margin 0 auto
+        padding-top w(40)
+        padding-bottom w(5)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(16)
+        line-height w(20)
+        color $c-black
+        border-bottom w(1) solid $c-black
+        text-align center
+
+    &__swiper-button-prev-1
+        position absolute
+        top w(170)
+        left w(0)
+        width w(40)
+        height w(40)
+        background url('/images/slider-arrow-prev.png')
+        background-size cover
+        z-index 10
+
+    &__swiper-button-next-1
+        position absolute
+        top w(170)
+        right w(0)
+        width w(40)
+        height w(40)
+        background url('/images/slider-arrow-next.png')
+        background-size cover
+        z-index 10
+

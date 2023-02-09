@@ -1,9 +1,16 @@
 extends /blocks/layout-default/layout-default
 include /blocks/header-top/header-top
 include /blocks/header-bottom/header-bottom
-include /blocks/help/help
+include /blocks/promo-banner/promo-banner
 include /blocks/info/info
+include /blocks/can-help/can-help
+include /blocks/option/option
+include /blocks/solution-methods/solution-methods
+include /blocks/help/help
+include /blocks/decision/decision
 include /blocks/about-us/about-us
+include /blocks/tabs-case/tabs-case
+include /blocks/slider/slider
 include /blocks/questions/questions
 include /blocks/contact/contact
 include /blocks/footer/footer
@@ -14,9 +21,16 @@ block head
 block content
 	+header-top()
 	+header-bottom()
+	+promo-banner()
 	+info()
+	+can-help()
+	+option()
+	+solution-methods()
 	+help()
-	+about-us()
+	+decision()
+	+tabs-case()
+	+slider()
 	+questions()
+	+about-us()
 	+contact()
 	+footer()

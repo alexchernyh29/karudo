@@ -1,0 +1,191 @@
+.tabs-case
+    padding-top w(120)
+
+    &__title
+        padding-bottom w(15)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(48)
+        line-height w(60)
+        color $c-black
+        text-transform uppercase
+        text-align center
+
+    &__line
+        width w(163)
+        height w(4)
+        background $c-yellow
+        margin 0 auto
+
+    &__wrap
+        padding w(40) w(0) 
+
+    &__tab
+        margin 0 auto
+
+    &__tab-caption
+        display flex
+        flex-direction row
+        border-bottom w(1) solid $c-grey
+
+    &__tab-text
+        padding w(10) w(30) w(5)
+        font-family $ff-Arsenal
+        font-weight 400
+        font-size w(22)
+        line-height w(28)
+        color $c-grey
+        &.active
+            color $c-white
+            background-color $c-black
+            border-radius w(15) w(15) w(0) w(0)
+
+    &__tab-content
+        display none
+        &.active
+            display block
+
+    // &__content-wrap
+    //     display none
+    //     &_active
+    //         display block
+
+    &__wrap-content
+        padding w(40) w(97) w(0)
+        display flex
+        flex-direction row
+
+    &__image
+        width w(358)
+        img
+            width 100%
+        
+    &__wrap-block
+        width w(552)
+        padding w(55) w(0) w(0) w(30)
+
+    &__wrap-header
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__header-block
+        display flex
+        flex-direction row
+
+    &__wrap-title
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(26)
+        line-height w(33)
+        color $c-grey
+
+    &__wrap-number
+        padding-left w(15)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(26)
+        line-height w(33)
+        color $c-black
+
+    &__decision
+        padding-bottom w(5)
+        border-bottom w(1) solid $c-black
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(18)
+        line-height w(23)
+        color $c-black
+
+    &__wrap-main
+        padding w(60) w(84) 0 0
+
+    &__wrap-info
+        padding-top w(15)
+        display flex
+        flex-direction row
+        &:first-child
+            padding-top w(0)
+
+    &__info-title
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(18)
+        line-height w(23)
+        color $c-grey
+
+    &__info-text
+        padding-left w(10)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(18)
+        line-height w(23)
+        color $c-black
+
+    &__wrap-date
+        padding-top w(40)
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+
+    &__date-block
+        display flex
+        flex-direction row
+
+    &__counter
+        width w(56)
+        padding w(12) w(15)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(26)
+        line-height w(33)
+        color $c-black
+        background $c-yellow
+        border-radius w(53)
+
+    &__block
+        padding w(8) 0 w(8) w(20)
+
+    &__block-info
+        font-family $ff-Arsenal
+        font-weight 400
+        font-size w(14)
+        line-height w(18)
+        color $c-grey
+
+    &__block-text
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(18)
+        line-height w(23)
+        color $c-black
+
+    &__wrap-result
+        padding-top w(40)
+        display flex
+        flex-direction row
+
+    &__result-debt
+        padding w(20) w(30)
+        border w(1) solid $c-red
+        border-radius w(52) 0 0 w(52)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(18)
+        line-height w(23)
+        color $c-red
+        background-color $c-white
+
+    &__result-payment
+        padding w(20) w(30)
+        margin-left w(10)
+        border-radius 0 w(52) w(52) 0
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(18)
+        line-height w(23)
+        color $c-black
+        background $c-yellow
+
+    

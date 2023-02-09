@@ -1,0 +1,276 @@
+mixin tabs-case()
+
+    +b('section').tabs-case
+        .container
+            +e('h4').title ПОдтверждаем слово -<br>делом
+            +e.line
+            +e.wrap
+                +e.tab
+                    +e.tab-header
+                        +e('ul').tab-caption
+                            +e('li').tab-text.active Дело №1
+                            +e('li').tab-text Дело №2
+                            +e('li').tab-text Дело №3
+                            +e('li').tab-text Дело №4
+                            +e('li').tab-text Дело №5
+                            +e('li').tab-text Дело №6
+                            +e('li').tab-text Дело №7
+                    +e.tab-content.active
+                        +e.content-wrap
+                            +e.wrap-content
+                                +e.image
+                                    img(src='/images/document.png')
+                                +e.wrap-block
+                                    +e.wrap-header
+                                        +e.header-block
+                                            +e('p').wrap-title Дело №
+                                            +e('p').wrap-number А50-31166/2019
+                                        +e('p').decision Решение суда
+                                    +e.wrap-main
+                                        +e.wrap-info
+                                            +e('p').info-title Клиент:
+                                            +e('p').info-text Кобинская Марина Николаевна
+                                        +e.wrap-info
+                                            +e('p').info-title Доход:
+                                            +e('p').info-text официальный доход 23 000 рублей
+                                        +e.wrap-info
+                                            +e('p').info-title Кредиторы:
+                                            +e('p').info-text ПАО Банк ВТБ
+                                        +e.wrap-date
+                                            +e.date-block
+                                                +e('p').counter 01
+                                                +e.block
+                                                    +e('p').block-info Начало процедуры
+                                                    +e('p').block-text 14.10.2018
+                                            +e.date-arrow
+                                                img(src='/images/arrow.svg')
+                                            +e.date-block
+                                                +e('p').counter 02
+                                                +e.block
+                                                    +e('p').block-info Конец процедуры
+                                                    +e('p').block-text 29.12.2019
+                                        +e.wrap-result
+                                            +e.result-debt Долг 852 605 Р
+                                            +e.result-payment Списано 852 605 Р
+                    +e.tab-content
+                        +e.content-wrap
+                            +e.wrap-content
+                                +e.image
+                                    img(src='/images/document.png')
+                                +e.wrap-block
+                                    +e.wrap-header
+                                        +e.header-block
+                                            +e('p').wrap-title Дело №
+                                            +e('p').wrap-number 1111111111
+                                        +e('p').decision Решение суда
+                                    +e.wrap-main
+                                        +e.wrap-info
+                                            +e('p').info-title Клиент:
+                                            +e('p').info-text Кобинская Марина Николаевна
+                                        +e.wrap-info
+                                            +e('p').info-title Доход:
+                                            +e('p').info-text официальный доход 23 000 рублей
+                                        +e.wrap-info
+                                            +e('p').info-title Кредиторы:
+                                            +e('p').info-text ПАО Банк ВТБ
+                                        +e.wrap-date
+                                            +e.date-block
+                                                +e('p').counter 01
+                                                +e.block
+                                                    +e('p').block-info Начало процедуры
+                                                    +e('p').block-text 14.10.2018
+                                            +e.date-arrow
+                                                img(src='/images/arrow.svg')
+                                            +e.date-block
+                                                +e('p').counter 02
+                                                +e.block
+                                                    +e('p').block-info Конец процедуры
+                                                    +e('p').block-text 29.12.2019
+                                        +e.wrap-result
+                                            +e.result-debt Долг 852 605 Р
+                                            +e.result-payment Списано 852 605 Р
+                    +e.tab-content
+                        +e.content-wrap
+                            +e.wrap-content
+                                +e.image
+                                    img(src='/images/document.png')
+                                +e.wrap-block
+                                    +e.wrap-header
+                                        +e.header-block
+                                            +e('p').wrap-title Дело №
+                                            +e('p').wrap-number 2222222
+                                        +e('p').decision Решение суда
+                                    +e.wrap-main
+                                        +e.wrap-info
+                                            +e('p').info-title Клиент:
+                                            +e('p').info-text Кобинская Марина Николаевна
+                                        +e.wrap-info
+                                            +e('p').info-title Доход:
+                                            +e('p').info-text официальный доход 23 000 рублей
+                                        +e.wrap-info
+                                            +e('p').info-title Кредиторы:
+                                            +e('p').info-text ПАО Банк ВТБ
+                                        +e.wrap-date
+                                            +e.date-block
+                                                +e('p').counter 01
+                                                +e.block
+                                                    +e('p').block-info Начало процедуры
+                                                    +e('p').block-text 14.10.2018
+                                            +e.date-arrow
+                                                img(src='/images/arrow.svg')
+                                            +e.date-block
+                                                +e('p').counter 02
+                                                +e.block
+                                                    +e('p').block-info Конец процедуры
+                                                    +e('p').block-text 29.12.2019
+                                        +e.wrap-result
+                                            +e.result-debt Долг 852 605 Р
+                                            +e.result-payment Списано 852 605 Р
+                    +e.tab-content
+                        +e.content-wrap
+                            +e.wrap-content
+                                +e.image
+                                    img(src='/images/document.png')
+                                +e.wrap-block
+                                    +e.wrap-header
+                                        +e.header-block
+                                            +e('p').wrap-title Дело №
+                                            +e('p').wrap-number 33333333
+                                        +e('p').decision Решение суда
+                                    +e.wrap-main
+                                        +e.wrap-info
+                                            +e('p').info-title Клиент:
+                                            +e('p').info-text Кобинская Марина Николаевна
+                                        +e.wrap-info
+                                            +e('p').info-title Доход:
+                                            +e('p').info-text официальный доход 23 000 рублей
+                                        +e.wrap-info
+                                            +e('p').info-title Кредиторы:
+                                            +e('p').info-text ПАО Банк ВТБ
+                                        +e.wrap-date
+                                            +e.date-block
+                                                +e('p').counter 01
+                                                +e.block
+                                                    +e('p').block-info Начало процедуры
+                                                    +e('p').block-text 14.10.2018
+                                            +e.date-arrow
+                                                img(src='/images/arrow.svg')
+                                            +e.date-block
+                                                +e('p').counter 02
+                                                +e.block
+                                                    +e('p').block-info Конец процедуры
+                                                    +e('p').block-text 29.12.2019
+                                        +e.wrap-result
+                                            +e.result-debt Долг 852 605 Р
+                                            +e.result-payment Списано 852 605 Р
+                    +e.tab-content
+                        +e.content-wrap
+                            +e.wrap-content
+                                +e.image
+                                    img(src='/images/document.png')
+                                +e.wrap-block
+                                    +e.wrap-header
+                                        +e.header-block
+                                            +e('p').wrap-title Дело №
+                                            +e('p').wrap-number 444444444
+                                        +e('p').decision Решение суда
+                                    +e.wrap-main
+                                        +e.wrap-info
+                                            +e('p').info-title Клиент:
+                                            +e('p').info-text Кобинская Марина Николаевна
+                                        +e.wrap-info
+                                            +e('p').info-title Доход:
+                                            +e('p').info-text официальный доход 23 000 рублей
+                                        +e.wrap-info
+                                            +e('p').info-title Кредиторы:
+                                            +e('p').info-text ПАО Банк ВТБ
+                                        +e.wrap-date
+                                            +e.date-block
+                                                +e('p').counter 01
+                                                +e.block
+                                                    +e('p').block-info Начало процедуры
+                                                    +e('p').block-text 14.10.2018
+                                            +e.date-arrow
+                                                img(src='/images/arrow.svg')
+                                            +e.date-block
+                                                +e('p').counter 02
+                                                +e.block
+                                                    +e('p').block-info Конец процедуры
+                                                    +e('p').block-text 29.12.2019
+                                        +e.wrap-result
+                                            +e.result-debt Долг 852 605 Р
+                                            +e.result-payment Списано 852 605 Р
+                    +e.tab-content
+                        +e.content-wrap
+                            +e.wrap-content
+                                +e.image
+                                    img(src='/images/document.png')
+                                +e.wrap-block
+                                    +e.wrap-header
+                                        +e.header-block
+                                            +e('p').wrap-title Дело №
+                                            +e('p').wrap-number 55555555
+                                        +e('p').decision Решение суда
+                                    +e.wrap-main
+                                        +e.wrap-info
+                                            +e('p').info-title Клиент:
+                                            +e('p').info-text Кобинская Марина Николаевна
+                                        +e.wrap-info
+                                            +e('p').info-title Доход:
+                                            +e('p').info-text официальный доход 23 000 рублей
+                                        +e.wrap-info
+                                            +e('p').info-title Кредиторы:
+                                            +e('p').info-text ПАО Банк ВТБ
+                                        +e.wrap-date
+                                            +e.date-block
+                                                +e('p').counter 01
+                                                +e.block
+                                                    +e('p').block-info Начало процедуры
+                                                    +e('p').block-text 14.10.2018
+                                            +e.date-arrow
+                                                img(src='/images/arrow.svg')
+                                            +e.date-block
+                                                +e('p').counter 02
+                                                +e.block
+                                                    +e('p').block-info Конец процедуры
+                                                    +e('p').block-text 29.12.2019
+                                        +e.wrap-result
+                                            +e.result-debt Долг 852 605 Р
+                                            +e.result-payment Списано 852 605 Р
+                    +e.tab-content
+                        +e.content-wrap
+                            +e.wrap-content
+                                +e.image
+                                    img(src='/images/document.png')
+                                +e.wrap-block
+                                    +e.wrap-header
+                                        +e.header-block
+                                            +e('p').wrap-title Дело №
+                                            +e('p').wrap-number 6666666
+                                        +e('p').decision Решение суда
+                                    +e.wrap-main
+                                        +e.wrap-info
+                                            +e('p').info-title Клиент:
+                                            +e('p').info-text Кобинская Марина Николаевна
+                                        +e.wrap-info
+                                            +e('p').info-title Доход:
+                                            +e('p').info-text официальный доход 23 000 рублей
+                                        +e.wrap-info
+                                            +e('p').info-title Кредиторы:
+                                            +e('p').info-text ПАО Банк ВТБ
+                                        +e.wrap-date
+                                            +e.date-block
+                                                +e('p').counter 01
+                                                +e.block
+                                                    +e('p').block-info Начало процедуры
+                                                    +e('p').block-text 14.10.2018
+                                            +e.date-arrow
+                                                img(src='/images/arrow.svg')
+                                            +e.date-block
+                                                +e('p').counter 02
+                                                +e.block
+                                                    +e('p').block-info Конец процедуры
+                                                    +e('p').block-text 29.12.2019
+                                        +e.wrap-result
+                                            +e.result-debt Долг 852 605 Р
+                                            +e.result-payment Списано 852 605 Р

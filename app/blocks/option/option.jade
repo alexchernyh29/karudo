@@ -1,0 +1,50 @@
+mixin option()
+
+    +b('section').option
+        .container
+            +e('p').title СЕЙЧАС У ВАС ЕСТЬ ВСЕГО
+            +e.wrap-title
+                +e('p').title ЛИШЬ 
+                +e('p').title-yellow 2 варианта 
+                +e('p').title действий
+            +e.line
+            +e('p').subtitle Вы можете решить свою проблему раз и на всегда, или оставить все как есть
+            +e.wrap 
+                +e.block
+                    +e.block-title <span>Оставить все как есть</span>
+                    +e.wrap-item
+                        +e.icon
+                            img(src='/images/icon-close.svg')
+                        +e.text <span>Закрытие всех исполнительных производств</span>
+                    +e.wrap-item
+                        +e.icon
+                            img(src='/images/icon-close.svg')
+                        +e.text <span>Свобода передвижения за границу</span>
+                    +e.wrap-item
+                        +e.icon
+                            img(src='/images/icon-close.svg')
+                        +e.text <span>Отсутствие арестов на счетах и имуществе</span>
+                    +e.wrap-item
+                        +e.icon
+                            img(src='/images/icon-close.svg')
+                        +e.text <span>Вам больше не звонят коллекторы</span>
+                +e.block
+                    +e.block-title Оставить все как есть
+                    +e.wrap-item
+                        +e.icon
+                            img(src='/images/icon-check.svg')
+                        +e.text Закрытие всех исполнительных производств
+                    +e.wrap-item
+                        +e.icon
+                            img(src='/images/icon-check.svg')
+                        +e.text Свобода передвижения за границу
+                    +e.wrap-item
+                        +e.icon
+                            img(src='/images/icon-check.svg')
+                        +e.text Отсутствие арестов на счетах и имуществе
+                    +e.wrap-item
+                        +e.icon
+                            img(src='/images/icon-check.svg')
+                        +e.text Вам больше не звонят коллекторы
+
+

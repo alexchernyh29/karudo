@@ -1,0 +1,69 @@
+.can-help
+    padding-top w(120)
+
+    &__block 
+        text-align center
+
+    &__wrap
+        width w(1134)
+        height w(190)
+        border-radius w(15)
+        padding w(40) w(20) w(40) w(40)
+        margin w(60) auto
+        display flex
+        flex-direction row
+        background $c-yellow
+
+    &__line
+        width w(163)
+        height w(4)
+        background $c-yellow
+        margin 0 auto
+
+
+    &__title
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(48)
+        line-height w(68)
+        color $c-black
+        padding-bottom w(15)
+        text-transform uppercase
+
+    &__text
+        position relative
+        font-family $ff-Arsenal
+        width w(232)
+        font-size w(26)
+        line-height w(33)
+        font-weight 700
+        padding-top w(10)
+        padding-left w(38)
+        padding-right w(18)
+        border-left w(2) solid $c-white
+        z-index 2
+        &:first-child
+            padding-left w(18)
+            border-left none
+            width w(200)
+        &:last-child
+            padding-right 0
+            width w(550)
+        
+        &::before
+            content ''
+            position absolute
+            top w(2)
+            left w(20)
+            width w(30)
+            height w(30)
+            background $c-white
+            border-radius w(20)
+            z-index -1
+
+    &__vidio
+        width w(1134)
+        margin 0 auto
+        img
+            width 100%
+

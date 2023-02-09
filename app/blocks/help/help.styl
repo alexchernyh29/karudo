@@ -1,5 +1,5 @@
 .help
-    padding w(120) 0
+    padding-top w(120)
 
     &__title
         padding-bottom w(15)
@@ -19,10 +19,14 @@
         margin 0 auto
 
     &__wrap
+        position relative
         padding-top w(60)
         display flex
         flex-direction row
         justify-content space-between
+
+    &__wrap__block
+        width w(203)
 
     &__counter
         width w(56)
@@ -58,3 +62,21 @@
         line-height w(33)
         color $c-black
         text-align center
+
+    &__wrap__line
+        position absolute
+        display flex
+        flex-direction row
+
+    &__dotted-line
+        margin w(20) 0 w(20) w(84) 
+        padding 0
+        width w(149)
+        height w(2)
+        border none
+        background linear-gradient(to right, transparent 50%, #fff 50%), $c-yellow
+        background-size w(16) w(2), 100% w(2)
+        &:first-child
+            margin w(20) 0 w(20) w(70)
+        &:last-child
+            width 0

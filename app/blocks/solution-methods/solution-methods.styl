@@ -1,0 +1,126 @@
+.solution-methods
+    padding-top w(120)
+
+    &__title
+        padding-bottom w(15)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(48)
+        line-height w(60)
+        color $c-black
+        text-align center
+        text-transform uppercase
+        border-bottom w(4) solid $c-yellow
+        span
+            background: linear-gradient(97.83deg, #F9ED32 -2.86%, #FBB040 84.88%);
+            -webkit-background-clip text
+            -webkit-text-fill-color transparent
+            background-clip text
+            text-fill-color transparent
+
+    &__line
+        width w(163)
+        height w(4)
+        background $c-yellow
+        margin 0 auto
+
+    &__card
+        padding-top w(60)
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__card-item
+        width w(358)
+        height w(594)
+
+    &__image
+        width w(357)
+        filter drop-shadow(6px 9px 10px rgba(38, 38, 38, 0.15))
+        border w(1) solid $c-yellow
+        border-radius w(20)
+        img
+            width 100%
+
+    &__card-title
+        margin-top w(20)
+        width w(358)
+        height w(66)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(26)
+        line-height w(33)
+        text-align center
+        color $c-black
+
+    &__card-subtitle
+        width w(358)
+        margin-top w(10)
+        margin-bottom w(15)
+        height w(40)
+        font-family $ff-Arsenal
+        font-weight 400
+        font-size w(16)
+        line-height w(20)
+        text-align center
+        color $c-grey
+
+    &__card-text
+        position relative
+        padding-left w(5)
+        font-family $ff-Arsenal
+        font-weight 400
+        font-size w(16)
+        line-height w(20)
+        color $c-black
+        padding-top w(10)
+        &:first-child
+            padding-top w(15)
+
+        &::before
+            content ''
+            position absolute
+            left w(0)
+            width w(10)
+            height w(10)
+            background $c-yellow
+            border-radius w(20)
+            z-index -1
+
+        span
+            color $c-red
+
+    &__card-price
+        padding-bottom w(20)
+        font-family $ff-Arsenal
+        font-weight 700
+        font-size w(26)
+        line-height w(33)
+        text-align center
+        color $c-black
+
+    &__price-1
+        padding-top w(30)
+
+    &__price-2
+        padding-top w(40)
+
+    &__price-3
+        padding-top w(20)
+
+    &__submit
+        margin 0 auto
+        width w(211)
+        height w(42)
+        padding w(12) w(35)
+        background linear-gradient(97.83deg, #F9ED32 -2.86%, #FBB040 84.88%)
+        border-radius w(53)
+        font-family $ff-Arsenal
+        font-style normal
+        font-weight 400
+        font-size w(14)
+        line-height w(18)
+        color $c-black
+        border none
+        text-align center
+
